@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Predict Bitcoin by reading tweets</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Predict Bitcoin by reading tweets</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+A while ago Bitcoin proved it self to be the most volatile crypto there is. who doesn’t know that, right? well everyone does. there’s no…
+</section>
+<section data-field="body" class="e-content">
+<section name="0256" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="4834" id="4834" class="graf graf--h3 graf--leading graf--title">Predict Bitcoin by reading tweets</h3><figure name="5be5" id="5be5" class="graf graf--figure graf-after--h3"><div class="aspectRatioPlaceholder is-locked" style="max-width: 700px; max-height: 309px;"><div class="aspectRatioPlaceholder-fill" style="padding-bottom: 44.2%;"></div><img class="graf-image" data-image-id="1*Cfd8NSkrz6H94F-MEekvYw.jpeg" data-width="1456" data-height="643" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*Cfd8NSkrz6H94F-MEekvYw.jpeg"></div></figure><p name="6117" id="6117" class="graf graf--p graf-after--figure">A while ago Bitcoin proved it self to be the most volatile crypto there is. who doesn’t know that, right? well everyone does. there’s no point here :P</p><p name="6cb1" id="6cb1" class="graf graf--p graf-after--p">But, I can certainly make a point by telling you things become volatile because of sudden fast changes happening around us. Let’s try to think about it, what is the thing that is changing so fast everyday that effects everything in all industries?</p><blockquote name="51b4" id="51b4" class="graf graf--pullquote graf-after--p">YOU GUESSED IT! SOCIAL PLATFORMS.</blockquote><p name="91d2" id="91d2" class="graf graf--p graf-after--pullquote">People are constantly tweeting, posting, and sharing informations along the milliseconds and that’s effecting their decision to move or not move, to change job, to join a club, and in our case to buy/sell Bitcoin.</p><figure name="3b5c" id="3b5c" class="graf graf--figure graf--layoutOutsetLeft graf-after--p"><div class="aspectRatioPlaceholder is-locked" style="max-width: 525px; max-height: 394px;"><div class="aspectRatioPlaceholder-fill" style="padding-bottom: 75%;"></div><img class="graf-image" data-image-id="1*YJfIzEwyRfy__ZxwMsJtJQ.jpeg" data-width="1599" data-height="1200" src="https://cdn-images-1.medium.com/max/600/1*YJfIzEwyRfy__ZxwMsJtJQ.jpeg"></div></figure><p name="a5b5" id="a5b5" class="graf graf--p graf-after--figure">Knowing this, we <em class="markup--em markup--p-em">‘means </em><a href="http://worldfirst.com/" data-href="http://worldfirst.com/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><em class="markup--em markup--p-em">WorldFirst</em></a><em class="markup--em markup--p-em"> Awesome team’</em> started wondering wether we can use this information to try to give people a tool where they can try to predict tomorrow’s bitcoins behaviour (increasing/decreasing), and help them understand better the elements effecting this behaviour. <strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">So we gave it a try( we dedicated a day for the project).</em></strong></p><p name="f723" id="f723" class="graf graf--p graf-after--p">Without further ado, I’ll start explaining the project(checkout the <a href="https://github.com/abdrmdn/BitcoinPrediction" data-href="https://github.com/abdrmdn/BitcoinPrediction" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">repository</a>) that was done by us in the next section.</p><h4 name="356a" id="356a" class="graf graf--h4 graf-after--p">The project has 4 main parts:</h4><ul class="postList"><li name="6924" id="6924" class="graf graf--li graf-after--h4">The core, which is the machine learning part (Python)</li><li name="da82" id="da82" class="graf graf--li graf-after--li">The Api that connects them all (PHP)</li><li name="d225" id="d225" class="graf graf--li graf-after--li">The Client-side part (ReactJS)</li><li name="338e" id="338e" class="graf graf--li graf-after--li">The scraper infrastructure that runs the heavy work (Docker-swarm, GoogleCloud, some nodejs)</li></ul><h4 name="2482" id="2482" class="graf graf--h4 graf-after--li">I’ll explain the general process before I dig into details</h4><p name="478c" id="478c" class="graf graf--p graf-after--h4">The user will see a UI, will be prompted an input (some hashtag, and the hashtag represents the pool that the user wants the algorithm to base its information from), the website will send a request to our Prediction API which in turn will call 2 mains services : tweets scraper, and the machine learning script. The scraper will get all the tweets that are related to the hashtag provided by the user, then the machine learning algorithm will basically get the data, preprocess it, and comes up with a prediction based on the data given wether the value will increase or decrease the day after.</p><p name="671a" id="671a" class="graf graf--p graf-after--p">Now if you really like to read more details about the processes, you’ll be satisfied after the next section, other-wise whats up there sums it all up :), don’t forget to follow and clap for more interesting articles like these.</p><h3 name="dc9b" id="dc9b" class="graf graf--h3 graf-after--p">Now lets dig into details to satisfy our geeky side 😄</h3><h4 name="2363" id="2363" class="graf graf--h4 graf-after--h3">1. The core, which is the machine learning part</h4><p name="96b2" id="96b2" class="graf graf--p graf-after--h4">The code will basically get tweets, bitcoin values for the same period of the tweets brought, and a dictionary which decides if the tweet brings a good effect or not. After that it will process those tweets and checks the frequencies of those dictionary keywords in the tweets, and tries to build a pattern between those frequency values and the value of the bitcoin the day after that, and that pattern will be our Model. (currently the model is linear, so it can be improved to be more flexible with the prediction)</p><p name="13be" id="13be" class="graf graf--p graf-after--p">Using this model, we can bring todays tweets and predict tomorrows bitcoin value. which in turn will show if the value is decreasing or increasing.</p><h4 name="f19a" id="f19a" class="graf graf--h4 graf-after--p">2. The API that connects them all (PHP)</h4><p name="6383" id="6383" class="graf graf--p graf-after--h4">We were thinking at the beginning of Lumen (a micro-framework by Laravel) and Slim micro-framework, both frameworks are very slim yet so powerful and easy to use. The documentation for both frameworks is well documented.</p><p name="8ff3" id="8ff3" class="graf graf--p graf-after--p">We&#39;ve been using Laravel framework for a while which is kinda the father of Lumen so we decided to try something new, we decided to go with Slim PHP micro-framework.</p><p name="edeb" id="edeb" class="graf graf--p graf-after--p">Our first approach is to agree on the API contract, and then we proceeded to create the endpoint for our consumer which is our web client application.</p><p name="6ade" id="6ade" class="graf graf--p graf-after--p">Web client sends a GET request with a #hashtag parameter, then we process the request and send a POST request to our other service called Scrapper. Scrapper then does his magic and get all the data from Twitter and store it in our database, then we send another GET request with the #hashtag to Scrapper to get all the data from the database, we store the results in CSV format and feed it into our Machine Learning service, machine learning service will do the magic and return us the result which is either 0 or 1. <br> — 0 means cryptocurrency is stable or going down.<br> — 1 means it&#39;s going up. <br>Based on that results we will return the response to our web client as per our API contract.</p><h4 name="f16c" id="f16c" class="graf graf--h4 graf-after--p">3. The Client-side part (ReactJS)</h4><p name="a8fc" id="a8fc" class="graf graf--p graf-after--h4">As you can see in the Repository, you can tell that we used ReactJs since its very trendy now, and was a great chance for us to use such a cool framework.<br>Check the <a href="https://github.com/abdrmdn/BitcoinPrediction/tree/master/hackathon_frontend" data-href="https://github.com/abdrmdn/BitcoinPrediction/tree/master/hackathon_frontend" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">repository</a>.</p><h4 name="5a3d" id="5a3d" class="graf graf--h4 graf-after--p">4. The scraper infrastructure that runs the heavy work</h4><p name="2fe7" id="2fe7" class="graf graf--p graf-after--h4 graf--trailing">you can see that we used Docker-swarm, GoogleCloud, and some nodejs to achieve that.<br>Please refer to the <a href="https://github.com/abdrmdn/BitcoinPrediction/tree/master/hackathon_twitter" data-href="https://github.com/abdrmdn/BitcoinPrediction/tree/master/hackathon_twitter" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><em class="markup--em markup--p-em">documentation</em></a> for more details</p></div></div></section><section name="7f8c" class="section section--body"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="c569" id="c569" class="graf graf--h3 graf--leading">Summary</h3><p name="bfe3" id="bfe3" class="graf graf--p graf-after--h3">Thats all that there is to this magnificent idea, you still might argue if this will bring perfect precise results or not.but, this wasnt the point of this quick hackathon. the point was to make a proof of concept that social media does have part in effecting how such things grow.<br>hope you’ve enjoyed this writing.</p><p name="a111" id="a111" class="graf graf--p graf-after--p">Buy one of those <a href="http://tidd.ly/8f345c71" data-href="http://tidd.ly/8f345c71" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">programmers stickers</a>, they’re amazing 😍.</p><p name="1830" id="1830" class="graf graf--p graf-after--p graf--trailing">And stay tuned and follow my medium for more interesting articles like this.</p></div></div></section><section name="5244" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="ea68" id="ea68" class="graf graf--p graf--leading graf--trailing"><strong class="markup--strong markup--p-strong">Special thanks</strong> to (<a href="https://www.linkedin.com/in/michaelfavila/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_top%3BdFrhMda5Swq9ce5WlLhTzA%3D%3D&amp;licu=urn%3Ali%3Acontrol%3Ad_flagship3_search_srp_top-search_srp_result&amp;lici=JDL5yd0tQDyEics2zrpL3Q%3D%3D" data-href="https://www.linkedin.com/in/michaelfavila/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_top%3BdFrhMda5Swq9ce5WlLhTzA%3D%3D&amp;licu=urn%3Ali%3Acontrol%3Ad_flagship3_search_srp_top-search_srp_result&amp;lici=JDL5yd0tQDyEics2zrpL3Q%3D%3D" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Michael Favila</a>, Leon Cheung, <a href="https://www.linkedin.com/in/tim-mohrbach-a9b3805b/" data-href="https://www.linkedin.com/in/tim-mohrbach-a9b3805b/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Tim Mohrbach</a>, Joe NG, <a href="https://www.linkedin.com/in/swodha-jha-5114b517/" data-href="https://www.linkedin.com/in/swodha-jha-5114b517/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Swodha Jha</a>, Sandra Zhao, and <a href="https://www.linkedin.com/in/jenson-cheung-7b874519/" data-href="https://www.linkedin.com/in/jenson-cheung-7b874519/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Jenson Cheung</a>) for helping build this project.</p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@abidul.rmdn" class="p-author h-card">Abidul Ramadan</a> on <a href="https://medium.com/p/87e99d251fe6"><time class="dt-published" datetime="2018-06-18T14:09:19.183Z">June 18, 2018</time></a>.</p><p><a href="https://medium.com/@abidul.rmdn/predict-bitcoin-by-reading-tweets-87e99d251fe6" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on July 28, 2019.</p></footer></article></body></html>
