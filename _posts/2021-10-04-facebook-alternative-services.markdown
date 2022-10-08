@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Facebook alternative services"
+author: abidul
 categories: [ Jekyll ]
 image: assets/images/facebook-alternative-services.jpeg
 ---
