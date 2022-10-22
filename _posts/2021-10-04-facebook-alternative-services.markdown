@@ -2,7 +2,7 @@
 layout: post
 title:  "Facebook alternative services"
 author: abidul
-categories: [ Jekyll ]
+categories: [ Tech ]
 image: assets/images/facebook-alternative-services.jpeg
 ---
 As most of you know that on 4/10/2021 FB major services went down.
@@ -13,18 +13,18 @@ more details: https://www.cbsnews.com/news/facebook-whistleblower-frances-haugen
 
 This article is provide alternatives for those services.
 
-###FB Workplace
+### FB Workplace
 FB workplace is a collaboration tool for companies. alternatives are:
 - Rockso
 - Microsoft
 - Speakap
 
-###Whatsapp
+### Whatsapp
 - Telegram
 - Botim
 - Signal
 
-###Instagram
+### Instagram
 - VSCO
 - 500px
 - Tiktok
