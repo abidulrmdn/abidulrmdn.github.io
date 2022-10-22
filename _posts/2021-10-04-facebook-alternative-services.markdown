@@ -13,17 +13,19 @@ more details: https://www.cbsnews.com/news/facebook-whistleblower-frances-haugen
 
 This article is provide alternatives for those services.
 
-FB Workplace
+###FB Workplace
 FB workplace is a collaboration tool for companies. alternatives are:
+- Rockso
+- Microsoft
+- Speakap
 
-Speakap
-Rockso
-Microsoft
-Whatsapp
-Telegram
-Botim
-Signal
-Instagram
-VSCO
-500px
-Tiktok
+###Whatsapp
+- Telegram
+- Botim
+- Signal
+
+###Instagram
+- VSCO
+- 500px
+- Tiktok
+- Bereal
