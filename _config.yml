@@ -7,7 +7,8 @@ baseurl: ''
 disqus: 'TechAbbi'
 email: 'abidul.rmdn@gmail.com'
 contact-formspree-endpoint: 'https://formspree.io/f/xeqwavgd'
-mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
+mailchimp-list: 'https://medium.us2.list-manage.com/subscribe/post?u=6e2e48dbdcf3aa060e8b276da&amp;id=c56c8a29c4&amp;f_id=001658e0f0'
+
 
 include: ["_pages"]
 permalink: /:title/
@@ -23,7 +24,7 @@ authors:
     abidul:
       name:           Abidul
       site:           https://abidul.dev
-      avatar:         assets/images/avatar1.jpg
+      avatar:         assets/images/avatar-abidul.jpg
       bio:            "Hi, I am Abbi/Abidul, the author of TechAbbi, the author of this blog. I hope you like it!"
       email:          abidul.rmdn@gmail.com
       twitter:        https://twitter.com/AbidulRamadan
