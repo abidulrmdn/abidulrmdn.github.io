@@ -4,7 +4,7 @@ title:  "How I Make a Strict Cloud-based Security for My Infrastructure"
 author: abidul
 categories: [ Tech, cloud, tutorial ]
 image: https://miro.medium.com/v2/resize:fit:1400/0*AlGKbo7JH7lWxx24
-tags: [ security, aws, cloud, employees, awareness, infrastructure, security ]
+tags: [ security, aws, cloud, employees, awareness, infrastructure, security, featured]
 ---
 During my 7years of experience in Backend and DevOps I’ve realized over time that a platform that you help developing and maintain throughout the years is worth nothing if there was a security breach one day in the company, it will make the company lose credibility, peoples privacy and data, some times lots of money. So for me, It's a no-brainer thing to discuss or investigate how to tighten your security for your infrastructure in your current company or even if it was your own company.
 

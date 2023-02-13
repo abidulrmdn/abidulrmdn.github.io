@@ -4,7 +4,7 @@ title:  "SAML 2 For Web Explained In Simple Words"
 author: abidul
 categories: [ Tech, tutorial ]
 image: https://miro.medium.com/max/1400/0*TkX4rA4Vt4wIqPAO
-tags: [summer]
+tags: [summer, featured]
 ---
 
 I was working on this project a while ago related to SAML Protocol for SSO (Single Sign On) feature. Well, simply to put it into words I had to read a lot to understand how this amazing protocol works and how to use its features.

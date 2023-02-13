@@ -4,7 +4,7 @@ title:  "I’ve Started a Habit of Being Factful, and It Served Me Well!"
 author: abidul
 categories: [ productivity, lifestyle ]
 image: https://miro.medium.com/v2/resize:fit:1400/0*VIPJ05xPfu_rzd0a
-tags: [book, habit, facts, lifestyle]
+tags: [book, habit, facts, lifestyle, featured]
 ---
 So, I’ve started reading this book called [Factfullness](https://books.google.nl/books?id=j-4yDwAAQBAJ&printsec=frontcover&dq=factulness&hl=en&sa=X&ved=2ahUKEwieudedkpjwAhUZG-wKHZrJBd8Q6AEwAHoECAMQAg#v=onepage&q&f=false) (by Hans Rosling). Through reading a couple of chapters I’ve encountered much useful information. But, I only want to talk about a couple of points that I’ve found super useful in the book and I was able to use them as action points in my lifestyle right away.
 
