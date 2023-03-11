@@ -4,7 +4,7 @@ title:  "How To Improve AWS Web Server Performance by Checking Your ALB Access L
 author: abidul
 categories: [ Tech, tutorial ]
 image: https://miro.medium.com/v2/resize:fit:1400/0*qrKpk3a217l8V4-O
-tags: [aws, tutorial, logs, alb, performance, server, web, sticky]
+tags: [aws, tutorial, logs, alb, performance, server, web, featured]
 ---
 If you have a setup of an AWS infrastructure for your web platform. Then you’ve probably noticed some performance issues that might differ from older times where you see an increase over the days, or maybe you have multiple regions and you’re wondering why some regions are better than others.
 

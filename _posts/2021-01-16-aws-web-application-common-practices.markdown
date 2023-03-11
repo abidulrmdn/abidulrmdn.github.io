@@ -4,7 +4,7 @@ title:  "AWS Web Application Common Practices"
 author: abidul
 categories: [ tech, howto ]
 image: https://miro.medium.com/v2/resize:fit:1400/format:webp/1*yUF4iWR3quD_uG3GH_TaLA.png
-tags: [best_practices, aws, howto, cloud, archeticture, services, web]
+tags: [best_practices, aws, howto, cloud, archeticture, services, web, featured, sticky]
 ---
 
 # AWS Web Application Common Practices
