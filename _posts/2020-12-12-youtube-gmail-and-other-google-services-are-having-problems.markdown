@@ -40,6 +40,7 @@ Somehow currently, if you open youtube in the incognito tab without signing in, 
 - Youtube offline downloads are inaccessible
 - Google photos not loading
 - Drive
+
 ### Time Log of the issue:
 Based on [DownDetector](https://downdetector.co.uk/search/?q=google) it started around 11:56 am GMT (3:56 am PT) with failure in the most popular Google services and G Suite applications appear to be affected.
 
