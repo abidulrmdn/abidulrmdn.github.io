@@ -6,15 +6,17 @@ categories: [ news, tech ]
 image: https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png
 tags: [news, gmail, google, down, error, youtube, services]
 ---
-
-503 errors and such...
+Errors such : 503 errors
 ---
+
 **Update**: Google since confirmed the issues and offered the following update:
 
 > We’re aware of a problem with Gmail affecting a majority of users. The affected users are unable to access Gmail. We will provide an update by 14/12/2020 12:12 detailing when we expect to resolve the problem. Please note that this resolution time is an estimate and may change.
 
 > Gmail service has already been restored for some users, and we expect a resolution for all users in the near future. Please note this time frame is an estimate and may change.
+
 ---
+
 Youtube is a product by Google, which everyone knows and everyone expects Google’s product to not fail.
 
 But It seems that youtube been having issues this morning around 11:56am GMT.
