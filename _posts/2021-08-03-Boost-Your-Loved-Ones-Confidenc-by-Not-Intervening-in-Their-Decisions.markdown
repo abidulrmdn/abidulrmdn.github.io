@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Boost Your Loved One’s Confidence by Not Intervening in Their Decisions"
+title:  "Nurturing Confidence: Empowering Your Loved Ones through Uninterrupted Decision-Making"
 author: abidul
 categories: [ lifestyle, productivity ]
 image: https://miro.medium.com/v2/resize:fit:1400/0*syZlhXmVfhaDbf5q
