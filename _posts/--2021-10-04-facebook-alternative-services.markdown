@@ -4,6 +4,7 @@ title:  "Facebook alternative services"
 author: abidul
 categories: [ Tech ]
 image: assets/images/facebook-alternative-services.jpeg
+tags: [summer, featured]
 ---
 As most of you know that on 4/10/2021 FB major services went down.
 
@@ -29,3 +30,7 @@ FB workplace is a collaboration tool for companies. alternatives are:
 - 500px
 - Tiktok
 - Bereal
+
+
+----
+Removed because it doesnt represent what I want ot publish
