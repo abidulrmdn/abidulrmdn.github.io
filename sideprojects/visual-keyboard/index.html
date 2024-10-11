@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shape-Based Keyboard</title>
+    <style>
+        .container {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .shape-key {
+            display: inline-block;
+            margin: 10px;
+            padding: 20px;
+            font-size: 18px;
+            border: 2px solid #333;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #f0f0f0;
+            position: relative;
+        }
+
+        .shape-key:hover::after {
+            content: attr(data-letters);
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 5px;
+            font-size: 14px;
+            background-color: #333;
+            color: white;
+            border-radius: 3px;
+        }
+
+        #output {
+            width: 300px;
+            height: 50px;
+            font-size: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #submit {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #dictionary {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        #dictionary table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            width: 50%;
+        }
+
+        #dictionary th, #dictionary td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Visual Shape-Based Keyboard</h1>
+        <h6>- By Abidul Ramadan</h6>
+        <div>
+            <button class="shape-key" data-shape="circle" data-letters="o, d, q, p, b (lowercase), O, D, Q, P, B (uppercase)">Circle</button>
+            <button class="shape-key" data-shape="curve" data-letters="c, s, u, g (lowercase), C, S, U, G (uppercase)">Curve</button>
+            <button class="shape-key" data-shape="line" data-letters="i, l, t, f (lowercase), I, L, T, F (uppercase)">Line</button>
+            <button class="shape-key" data-shape="triangle" data-letters="a, v, w, m (lowercase), A, V, W, M (uppercase)">Triangle</button>
+            <button class="shape-key" data-shape="square" data-letters="h, e (lowercase), H, E (uppercase)">Square</button>
+            <button class="shape-key" data-shape="cross" data-letters="x, k (lowercase), X, K (uppercase)">Cross</button>
+        </div>
+
+        <textarea id="output" readonly placeholder="Generated word will appear here"></textarea><br>
+        <button id="submit">Submit</button>
+<br/><br/><br/>
+        <div>=========================</div>
+        <div id="explanation">
+            <h2>How This Works</h2>
+            <p>The shape-based keyboard uses predefined shapes (circle, curve, line, triangle, square, cross) to represent letters. 
+            Each shape corresponds to a set of letters (both uppercase and lowercase). 
+            For example, the "circle" represents letters such as 'o', 'd', 'q', and their uppercase counterparts. 
+            When you press one or more shapes, the system generates all possible letter combinations based on those shapes. 
+            The system then compares the generated combinations to a list of valid words (the dictionary shown above). 
+            If a match is found, it will be displayed in the text box.
+            </p>
+        </div>
+        <div id="dictionary">
+            <h2>Current Dictionary</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Word</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>dog</tr>
+                    <tr><td>sold</tr>
+                    <tr><td>cup</tr>
+                    <tr><td>bold</tr>
+                    <tr><td>cat</tr>
+                    <tr><td>cut</tr>
+                    <tr><td>pot</tr>
+                    <tr><td>bit</tr>
+                    <tr><td>top</tr>
+                    <tr><td>pit</tr>
+                    <tr><td>COD</tr>
+                    <tr><td>DOG</tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        let selectedShapes = [];
+
+        // Expanded shape to letter mapping with comments for both lowercase and uppercase letters
+        const shapeToLetters = {
+            'circle': ['o', 'd', 'q', 'p', 'b', 'O', 'D', 'Q', 'P', 'B'],  // Lowercase and uppercase
+            'curve': ['c', 's', 'u', 'g', 'C', 'S', 'U', 'G'],              // Lowercase and uppercase
+            'line': ['i', 'l', 't', 'f', 'I', 'L', 'T', 'F'],              // Lowercase and uppercase
+            'triangle': ['a', 'v', 'w', 'm', 'A', 'V', 'W', 'M'],          // Lowercase and uppercase
+            'square': ['h', 'e', 'H', 'E'],                                // Lowercase and uppercase
+            'cross': ['x', 'k', 'X', 'K']                                  // Lowercase and uppercase
+        };
+
+        // Sample word list (expand this list for better results)
+        const wordList = ["dog", "sold", "cup", "bold", "cat", "cut", "pot", "bit", "top", "pit", "COD", "DOG"];
+
+        const output = document.getElementById('output');
+
+        // Function to calculate all combinations of the selected letters
+        function getCombinations(arr) {
+            if (arr.length === 0) {
+                return [''];
+            }
+            const restCombinations = getCombinations(arr.slice(1));
+            const result = [];
+            arr[0].forEach(letter => {
+                restCombinations.forEach(comb => {
+                    result.push(letter + comb);
+                });
+            });
+            return result;
+        }
+
+        // Event listener for shape buttons
+        document.querySelectorAll('.shape-key').forEach(key => {
+            key.addEventListener('click', () => {
+                const shape = key.getAttribute('data-shape');
+                selectedShapes.push(shapeToLetters[shape]);
+                console.log("Selected shapes: ", selectedShapes);
+            });
+        });
+
+        // Generate word when "Submit" is pressed
+        document.getElementById('submit').addEventListener('click', () => {
+            // Get all possible combinations of letters from the selected shapes
+            const letterCombinations = getCombinations(selectedShapes);
+            console.log("Possible combinations: ", letterCombinations);
+
+            // Try to find a matching word in the word list
+            let bestWord = letterCombinations.find(comb => wordList.includes(comb)) || '[no match]';
+            output.value = bestWord;
+
+            // Reset after generating the word
+            selectedShapes = [];
+        });
+
+    </script>
+</body>
+</html>
