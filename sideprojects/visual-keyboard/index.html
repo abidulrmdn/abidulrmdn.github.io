@@ -20,6 +20,11 @@
             cursor: pointer;
             background-color: #f0f0f0;
             position: relative;
+            transition: background-color 0.3s ease;
+        }
+
+        .shape-key.highlight {
+            background-color: #ffa07a; /* Light coral color for highlight */
         }
 
         .shape-key:hover::after {
@@ -54,28 +59,15 @@
             cursor: pointer;
         }
 
-        #dictionary {
+        #explanation {
             margin-top: 30px;
-            text-align: center;
-        }
-
-        #dictionary table {
-            margin: 0 auto;
-            border-collapse: collapse;
-            width: 50%;
-        }
-
-        #dictionary th, #dictionary td {
-            border: 1px solid #333;
-            padding: 10px;
             text-align: center;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Visual Shape-Based Keyboard</h1>
-        <h6>- By Abidul Ramadan</h6>
+        <h1>Shape-Based Keyboard</h1>
         <div>
             <button class="shape-key" data-shape="circle" data-letters="o, d, q, p, b (lowercase), O, D, Q, P, B (uppercase)">Circle</button>
             <button class="shape-key" data-shape="curve" data-letters="c, s, u, g (lowercase), C, S, U, G (uppercase)">Curve</button>
@@ -87,41 +79,17 @@
 
         <textarea id="output" readonly placeholder="Generated word will appear here"></textarea><br>
         <button id="submit">Submit</button>
-<br/><br/><br/>
-        <div>=========================</div>
+
         <div id="explanation">
+            <h2>Current words available in dictionary:</h2>
+            <p>dog, sold, cup, bold, cat, cut, pot, bit, top, pit, COD, DOG</p>
             <h2>How This Works</h2>
             <p>The shape-based keyboard uses predefined shapes (circle, curve, line, triangle, square, cross) to represent letters. 
             Each shape corresponds to a set of letters (both uppercase and lowercase). 
-            For example, the "circle" represents letters such as 'o', 'd', 'q', and their uppercase counterparts. 
             When you press one or more shapes, the system generates all possible letter combinations based on those shapes. 
-            The system then compares the generated combinations to a list of valid words (the dictionary shown above). 
+            The system then compares the generated combinations to a list of valid words. 
             If a match is found, it will be displayed in the text box.
             </p>
-        </div>
-        <div id="dictionary">
-            <h2>Current Dictionary</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Word</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td>dog</tr>
-                    <tr><td>sold</tr>
-                    <tr><td>cup</tr>
-                    <tr><td>bold</tr>
-                    <tr><td>cat</tr>
-                    <tr><td>cut</tr>
-                    <tr><td>pot</tr>
-                    <tr><td>bit</tr>
-                    <tr><td>top</tr>
-                    <tr><td>pit</tr>
-                    <tr><td>COD</tr>
-                    <tr><td>DOG</tr>
-                </tbody>
-            </table>
         </div>
     </div>
 
@@ -159,10 +127,12 @@
         }
 
         // Event listener for shape buttons
-        document.querySelectorAll('.shape-key').forEach(key => {
+        document.querySelectorAll('.shape-key').forEach((key, index) => {
             key.addEventListener('click', () => {
                 const shape = key.getAttribute('data-shape');
                 selectedShapes.push(shapeToLetters[shape]);
+                key.classList.add('highlight'); // Highlight the button
+                key.style.order = index; // Set order based on index
                 console.log("Selected shapes: ", selectedShapes);
             });
         });
@@ -179,6 +149,9 @@
 
             // Reset after generating the word
             selectedShapes = [];
+            document.querySelectorAll('.shape-key').forEach(key => {
+                key.classList.remove('highlight'); // Remove highlight
+            });
         });
 
     </script>
