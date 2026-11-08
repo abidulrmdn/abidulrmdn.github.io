@@ -26,7 +26,7 @@ authors:
       site:           https://abidul.dev
       resume:         https://drive.google.com/file/d/1ZUMr7hEgnbwhB5UFUjXXHhjln1bLtwur/view?usp=share_link
       avatar:         assets/images/avatar-abidul.jpg
-      bio:            "Hi, I am Abbi/Abidul, the author of TechAbbi, the author of this blog. I hope you like it!"
+      bio:            "Engineering manager in Amsterdam, still an engineer. From Damascus. The longer introduction is on Who's Abidul."
       email:          abidul.rmdn@gmail.com
       twitter:        https://twitter.com/AbidulRamadan
 
@@ -57,4 +57,15 @@ paginate: 10
 
 
 # Exclude metadata and development time dependencies (like Grunt plugins)
-exclude: [README.markdown, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules]
+exclude:
+  - README.markdown
+  - package.json
+  - grunt.js
+  - Gruntfile.js
+  - Gruntfile.coffee
+  - node_modules
+  - vendor
+  - .sass-cache
+  - .jekyll-cache
+  - Gemfile
+  - Gemfile.lock

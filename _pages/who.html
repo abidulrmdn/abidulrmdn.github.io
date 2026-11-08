@@ -1,0 +1,249 @@
+---
+title: "Who's Abidul"
+layout: default
+permalink: /who/
+who: true
+description: "Wander through a short introduction to Abidul Ramadan — engineering manager, still an engineer, from Damascus to Amsterdam."
+---
+
+<div class="who" data-who>
+  <nav class="who-index" aria-label="On this page">
+    <a href="#from">From</a>
+    <a href="#work">Work</a>
+    <a href="#craft">Craft</a>
+    <a href="#off">Off hours</a>
+    <a href="#now">Now</a>
+  </nav>
+
+  <div class="who-wrap who-hero">
+    <div>
+      <p class="who-kicker">A page you can wander</p>
+      <h1>Who's <em>Abidul</em></h1>
+      <p class="who-lede">Abidul Ramadan leads engineers and still writes the code. He lives in Amsterdam, started in Damascus, and keeps a product of his own running after the day is done.</p>
+      <p class="who-hero-note">Thirteen years in software. Five of them leading teams. The editor stays open.</p>
+    </div>
+    <div class="life-reel" data-reel>
+      <p class="sr-only">A short loop of the cities and the companies. Damascus, EIcom. Turkey, GoKnet. Malaysia, 16TWO, then iPrice. Hong Kong, WorldFirst. Amsterdam, Studocu, Speakap, Mollie, and Receiptu.</p>
+      <div class="life-reel-window">
+        <img class="reel-frame is-on" data-reel-stop="damascus" src="{{ '/assets/images/who/who-damascus.jpg' | relative_url }}" alt="">
+        <img class="reel-frame" data-reel-stop="turkey" src="{{ '/assets/images/who/who-turkey.jpg' | relative_url }}" alt="">
+        <img class="reel-frame" data-reel-stop="malaysia" src="{{ '/assets/images/who/who-malaysia.jpg' | relative_url }}" alt="">
+        <img class="reel-frame" data-reel-stop="hongkong" src="{{ '/assets/images/who/who-hongkong.jpg' | relative_url }}" alt="">
+        <img class="reel-frame" data-reel-stop="amsterdam" src="{{ '/assets/images/who/who-amsterdam.jpg' | relative_url }}" alt="">
+        <div class="life-reel-progress" aria-hidden="true"><span></span></div>
+      </div>
+      <div class="life-reel-meta">
+        <p><strong data-reel-place>Damascus</strong> <span data-reel-event>EIcom</span></p>
+        <button type="button" class="life-reel-toggle" data-reel-toggle aria-pressed="false">Pause</button>
+      </div>
+      <div class="life-reel-dots" aria-hidden="true">
+        <i data-reel-dot="damascus" class="is-on"></i>
+        <i data-reel-dot="turkey"></i>
+        <i data-reel-dot="malaysia"></i>
+        <i data-reel-dot="hongkong"></i>
+        <i data-reel-dot="amsterdam"></i>
+      </div>
+      <p class="life-reel-still">Damascus, EIcom. Turkey, GoKnet. Malaysia, 16TWO, then iPrice. Hong Kong, WorldFirst. Amsterdam, Studocu, Speakap, Mollie, and Receiptu.</p>
+    </div>
+  </div>
+
+  <section class="who-wrap who-route" id="from" data-spy>
+    <div>
+      <p class="who-kicker">The long way here</p>
+      <div class="stop-panel is-active" data-stop="damascus" data-img="{{ '/assets/images/who/who-damascus.jpg' | relative_url }}" data-alt="Illustrated Abidul in a limestone lane of old Damascus, a mosque dome beyond the arch.">
+        <h2>Damascus</h2>
+        <p>Born and raised there. He studied software and started as a PHP developer at EIcom. Arabic is still the language at the root of him. He left when staying had become the harder choice.</p>
+      </div>
+      <div class="stop-panel" data-stop="turkey" data-img="{{ '/assets/images/who/who-turkey.jpg' | relative_url }}" data-alt="Illustrated Abidul on an Istanbul waterfront, a mosque on the hill across the water.">
+        <h2>Turkey</h2>
+        <p>PHP at GoKnet, an internet provider. The first job far from home, where the work stopped being school and started being a system other people depended on.</p>
+      </div>
+      <div class="stop-panel" data-stop="malaysia" data-img="{{ '/assets/images/who/who-malaysia.jpg' | relative_url }}" data-alt="Illustrated Abidul on a rainy Kuala Lumpur street, twin towers in the haze.">
+        <h2>Malaysia</h2>
+        <p>Team lead of eight at 16TWO, a digital agency. Then iPrice, a price-comparison platform. Search got up to 25% quicker, through Elasticsearch, the database, and fewer round trips. A Go pipeline pulled a catalogue of millions of products through every day, enriched them, and put them back.</p>
+      </div>
+      <div class="stop-panel" data-stop="hongkong" data-img="{{ '/assets/images/who/who-hongkong.jpg' | relative_url }}" data-alt="Illustrated Abidul at Victoria Harbour at dusk, towers across the water.">
+        <h2>Hong Kong</h2>
+        <p>A year at WorldFirst, an FX platform. Most of the work was the path a customer walks to get in the door: onboarding, refactored with the people who owned it. He sat on the security committee and spent time with engineers stuck on performance.</p>
+      </div>
+      <div class="stop-panel" data-stop="amsterdam" data-img="{{ '/assets/images/who/who-amsterdam.jpg' | relative_url }}" data-alt="Illustrated Abidul on an Amsterdam canal bridge.">
+        <h2>Amsterdam</h2>
+        <p>The city that stuck. English at work for the international years. Dutch is in progress, somewhere between a conversation and a form.</p>
+        <ul class="stop-jobs">
+          <li>
+            <strong>Studocu · senior engineer · 2018–2021</strong>
+            <span>A study platform for 25 million students. Pages went from about a second and a half to 100–300ms across four AWS regions. About two million users came over from an acquisition. He shaped the code around domains, so teams could own one each, and built a local environment that made the team about a quarter faster.</span>
+          </li>
+          <li>
+            <strong>Speakap · engineering manager · 2021–2023</strong>
+            <span>A team of up to five, on an employee-communication product. He modernised the PHP through version 8, built the event system and the engagement product, and replaced a heavy Scrum cadence with a weekly flow. Shipping got about 30% faster. That engagement work sat inside a 15% lift in revenue and active users.</span>
+          </li>
+          <li>
+            <strong>Mollie · engineering manager · 2023–now</strong>
+            <span>The rooms below. Backend and platform, still in the code.</span>
+          </li>
+        </ul>
+      </div>
+      <div class="route-stops" role="tablist" aria-label="Places">
+        <button type="button" data-stop-btn="damascus" role="tab" aria-selected="true" class="is-active">Damascus</button>
+        <button type="button" data-stop-btn="turkey" role="tab" aria-selected="false">Turkey</button>
+        <button type="button" data-stop-btn="malaysia" role="tab" aria-selected="false">Malaysia</button>
+        <button type="button" data-stop-btn="hongkong" role="tab" aria-selected="false">Hong Kong</button>
+        <button type="button" data-stop-btn="amsterdam" role="tab" aria-selected="false">Amsterdam</button>
+      </div>
+    </div>
+    <figure class="route-photo">
+      <img data-route-photo src="{{ '/assets/images/who/who-damascus.jpg' | relative_url }}" alt="Illustrated Abidul in a limestone lane of old Damascus, a mosque dome beyond the arch.">
+    </figure>
+  </section>
+
+  <section class="who-wrap" id="work" data-spy>
+    <blockquote class="who-quote">
+      <p>Clear ownership. A high bar for who joins. Honest feedback, early. Teams that ship.</p>
+      <span>How he describes the job.</span>
+    </blockquote>
+
+    <div class="who-rooms-head">
+      <p class="who-kicker">Three ways in</p>
+      <h2>Pick a room.</h2>
+      <p>The same person, depending on which door you open. On a wide screen the others wait as a sliver.</p>
+    </div>
+
+    <div class="rooms" role="tablist" aria-label="Ways of knowing the work">
+      <div class="room is-open" data-room="manager" role="tab" tabindex="0" aria-selected="true">
+        <img class="room-bg" src="{{ '/assets/images/who/who-conversation.jpg' | relative_url }}" alt="">
+        <span class="room-name">Manager</span>
+        <div class="room-copy">
+          <h3>The manager</h3>
+          <p>At Mollie he leads a backend team of five. For a while it was two teams, ten people. He handed one back, on purpose, so the work in front of him could go deeper. He has hired two and promoted three, one of them from senior to staff.</p>
+          <p>The days are hiring, 1:1s, and staying in the room when something breaks. He designed the interview loop. Shipping moved from once every two weeks to several times a week. A slice of the week stays protected for bets the team can explain in a sentence: best case, worst case.</p>
+        </div>
+      </div>
+
+      <div class="room" data-room="engineer" role="tab" tabindex="0" aria-selected="false">
+        <img class="room-bg" src="{{ '/assets/images/who/who-desk.jpg' | relative_url }}" alt="">
+        <span class="room-name">Engineer</span>
+        <div class="room-copy">
+          <h3>The engineer</h3>
+          <p>He writes and reviews production code every week, mostly PHP and TypeScript, and he tends to pick up the pieces other teams feel.</p>
+          <p>At Mollie a core system moved off a shared database onto events. The old path kept running, and the cutover was shadow-tested. Failed messages land in a dead-letter queue, on a transactional outbox other teams could adopt, and can be tried again. Reporting moved to Apache Pinot. A report that took about forty seconds now answers in under one, on millions of transactions.</p>
+          <p>An AI support agent answers from the docs, through MCP, and can look at the code and the database before it replies. Support tickets fell by about half.</p>
+        </div>
+      </div>
+
+      <div class="room" data-room="founder" role="tab" tabindex="0" aria-selected="false">
+        <img class="room-bg room-bg-faces" src="{{ '/assets/images/who/who-cofounders.jpg' | relative_url }}" alt="">
+        <span class="room-name">Founder</span>
+        <div class="room-copy">
+          <h3>The founder</h3>
+          <p>Receiptu began as a wish to understand Dutch tax. He runs it with two friends, steadily, after work. He is the only engineer. They are the company.</p>
+          <p>The app is TypeScript and React, with iOS and Android beside it. A model reads receipts and invoices. Dutch VAT and income-tax rules sit in a domain he can test. The data lives on AWS in the EU. It lives at receiptu.com.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="who-wrap who-craft" id="craft" data-spy>
+    <p class="who-kicker">How the work is done</p>
+    <h2>A stack, and the rules he actually uses.</h2>
+    <div class="craft-grid">
+      <div>
+        <h3>The stack</h3>
+        <dl>
+          <div>
+            <dt>Languages</dt>
+            <dd>PHP, TypeScript, SQL. Go and Python when the job asks.</dd>
+          </div>
+          <div>
+            <dt>Frameworks</dt>
+            <dd>Laravel, Symfony, React. Node when the service is small.</dd>
+          </div>
+          <div>
+            <dt>Data</dt>
+            <dd>PostgreSQL, MySQL, MongoDB, Elasticsearch, Kafka, Apache Pinot.</dd>
+          </div>
+          <div>
+            <dt>Runs on</dt>
+            <dd>AWS, GCP, Docker, Kubernetes, Terraform.</dd>
+          </div>
+          <div>
+            <dt>Shape</dt>
+            <dd>Domain-driven design, event-driven systems, modular monoliths, REST.</dd>
+          </div>
+          <div>
+            <dt>Lately</dt>
+            <dd>LLM APIs, and support agents over internal docs. Coding agents every day. He still reviews the diff.</dd>
+          </div>
+        </dl>
+      </div>
+      <div>
+        <h3>How he leads</h3>
+        <ul>
+          <li><strong>Ownership.</strong> A team can say what it owns, and what it does not.</li>
+          <li><strong>A hiring bar.</strong> He designs the loop, and applies it the same way each time.</li>
+          <li><strong>Feedback early.</strong> Named while it is still small.</li>
+          <li><strong>30/60/90.</strong> A new person knows what the first three months are for.</li>
+          <li><strong>RACI.</strong> A shared decision has a name on it: who decides, who is consulted.</li>
+          <li><strong>Deploy frequency.</strong> The DORA measure he watches. Shipping is something you can count.</li>
+          <li><strong>Flow over ceremony.</strong> At Speakap, a weekly plan replaced a heavy Scrum cadence.</li>
+          <li><strong>Bets in one sentence.</strong> Best case, worst case, then a protected slice of the week. Hypothesis first.</li>
+          <li><strong>Living docs.</strong> The next person should be able to ship in their first week.</li>
+          <li><strong>Still in the code.</strong> He does not hand the team an architecture he will not review.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="who-wrap who-hobbies" id="off" data-spy>
+    <p class="who-kicker">Off the clock</p>
+    <h2>Two things the job does not cover.</h2>
+    <div class="hobby-pair">
+      <figure>
+        <img src="{{ '/assets/images/who/who-bouldering.jpg' | relative_url }}" alt="Illustrated Abidul bouldering on a purple indoor climbing wall.">
+        <figcaption>
+          <strong>Bouldering</strong>
+          <span>A wall, a few holds, and a problem small enough to finish. Most weeks there is one.</span>
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="{{ '/assets/images/who/who-drawing.jpg' | relative_url }}" alt="Illustrated Abidul drawing in a sketchbook at a kitchen table.">
+        <figcaption>
+          <strong>Drawing</strong>
+          <span>A page and a pencil. Something that does not have to ship.</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="who-wrap who-now" id="now" data-spy>
+    <div>
+      <p class="who-kicker">Still true</p>
+      <h2>Arabic at the root. English at work. Dutch, in progress.</h2>
+      <p>The rest of this site is the notebook: technical notes, and some that are just a life. If you want the person in a conversation, the door is an email. If you want the formal version, the résumé is there too.</p>
+      <ul class="who-links">
+        <li><a href="{{ '/' | relative_url }}">The writing</a></li>
+        <li><a href="https://receiptu.com" target="_blank" rel="noopener">Receiptu</a></li>
+        <li><a href="https://www.linkedin.com/in/abdrmdn" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://github.com/abidulrmdn" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="mailto:abidul.rmdn@gmail.com">Email</a></li>
+        <li><a href="https://drive.google.com/file/d/1yWhEZB_afIZqGorcrtXeZaGvvxQYCPHO/view?usp=sharing" target="_blank" rel="noopener">Résumé</a></li>
+      </ul>
+    </div>
+    <div class="prints">
+      <figure>
+        <img src="{{ '/assets/images/who/who-amsterdam.jpg' | relative_url }}" alt="">
+        <figcaption>Most days</figcaption>
+      </figure>
+      <figure>
+        <img src="{{ '/assets/images/who/who-desk.jpg' | relative_url }}" alt="">
+        <figcaption>Most evenings</figcaption>
+      </figure>
+      <figure>
+        <img src="{{ '/assets/images/who/who-street.jpg' | relative_url }}" alt="">
+        <figcaption>Still carried</figcaption>
+      </figure>
+    </div>
+  </section>
+</div>
+
+<script src="{{ '/assets/js/who.js' | relative_url }}"></script>

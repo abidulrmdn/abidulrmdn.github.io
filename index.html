@@ -10,6 +10,19 @@ description: "The blog and only blog for all my blog. probably! :P"
 <div class="container">
     
 {% if page.url == "/" %}
+
+<section class="home-invite">
+  <div class="home-invite-inner">
+    <img src="{{ '/assets/images/who/who-mountain.jpg' | relative_url }}" alt="Illustrated portrait of Abidul Ramadan.">
+    <div>
+      <p class="who-kicker">Start with the person</p>
+      <h2>Who's Abidul</h2>
+      <p>Engineering manager in Amsterdam, still writing the code, from Damascus by way of a few other cities. The posts can wait a minute.</p>
+      <a class="home-invite-go" href="{{ '/who/' | relative_url }}">Wander in</a>
+    </div>
+  </div>
+</section>
+
     
     
     
@@ -168,7 +181,7 @@ description: "The blog and only blog for all my blog. probably! :P"
    
     <div class="col-md-8 main-loop">
         
-        <h4 class="font-weight-bold spanborder"><span>All Stories</span></h4>
+        <h4 class="font-weight-bold spanborder"><span>The writing</span></h4>
         
 
         {% for post in paginator.posts %}

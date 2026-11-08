@@ -1,7 +1,16 @@
-jekyll:
-    image: jekyll/jekyll:latest
-    command: jekyll serve --force_polling
+services:
+  jekyll:
+    image: ruby:2.7
+    working_dir: /srv/jekyll
+    command: bash -c "gem install bundler:2.3.23 && bundle _2.3.23_ install && bundle _2.3.23_ exec jekyll serve --host 0.0.0.0 --force_polling"
     ports:
-        - 4000:4000
+      - "4000:4000"
+      - "35729:35729"
     volumes:
-        - .:/srv/jekyll
+      - .:/srv/jekyll
+      - bundle:/usr/local/bundle
+    environment:
+      BUNDLE_PATH: /usr/local/bundle
+
+volumes:
+  bundle:

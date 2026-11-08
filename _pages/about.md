@@ -1,8 +1,7 @@
 ---
 title: "About"
-layout: page-sidebar
+layout: page
 permalink: "/about.html"
-image: "/assets/images/screenshot.jpg"
-comments: true
 ---
-Made by <i class="fa fa-heart text-danger"></i> Abidul [@abidulrmdn](https://github.com/abidulrmdn).
+
+The introduction lives on [Who's Abidul](/who/). The rest of this site is the writing.
